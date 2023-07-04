@@ -7,7 +7,7 @@
 | GitHub Copilot | GitHub（Microsoft） | 不明（GitHubは2023年2月時点で１億人以上） | テキスト | コード支援 | 予測変換出力 | 60日間は無償、以降は有料 | OLTAクラウドファンディング、FastLabel、スカイディスク（ある意味Microsoft、JetBrains） |
 
 ## 各AIの特徴
-### 対話・一問一答
+### テキスト生成系
 1. ChatGPT
     1. 概要
         * Generative Pre-trained Transformer（GPT）を使用(https://zero2one.jp/ai-word/gpt/)
@@ -73,18 +73,3 @@
 1. https://qiita.com/elliot_tk/items/fd002ade309d4cac0a9f
 1. https://www.octoparse.jp/blog/top-20-artificial-intelligenceai-tools-for-2023
 1. https://find-a.jp/seotimes/whats-ai-tool-genre/
-
-NotionAI
-PKSHA Chatbot
-Bedrock
-
-Amazon CodeWhisperer
-
-Jasper AI
-
-Midjourney
-DALL・E 2
-
-voitra
-
-Prediction One
