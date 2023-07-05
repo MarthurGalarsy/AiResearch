@@ -2,19 +2,24 @@
 ## 一覧
 | AI名 | 運営 | 利用者数 | In/Out | タイプ | 使い方 | 料金 | 使用例 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ChatGPT | Open AI | 2023年1月時点で1億人 | テキスト | テキスト生成系 | 対話・一問一答 | Ver3.5は無料、Ver4は有料 | Bing、LINE公式アカウントなど（https://first-contact.jp/blog/article/chat-gpt-case-study/） |
-| Google Bard | Google | 未公表 | テキスト、画像(英語版のみ) | テキスト生成系 | 対話・一問一答 | 無料 | Google、JAL |
-| GitHub Copilot | GitHub（Microsoft） | 不明（GitHubは2023年2月時点で１億人以上） | テキスト | コード支援 | 予測変換出力 | 60日間は無償、以降は有料 | OLTAクラウドファンディング、FastLabel、スカイディスク（IDEでMicrosoft、JetBrains） |
-| Amazon CodeWhisperer | Amazon | 未公表 | テキスト | コード支援 | 予測変換出力 | 個人は無料、企業は有料 | 未公開（IDEでMicrosoft、JetBrains） |
-| Amazon Bedrock | Amazon | 未公表 | - | AIプラットフォーム | API経由 | まだ未公開 | Codaなどが一部先行利用中 |
+| ChatGPT | Open AI | 23年1月時点で1億人 | テキスト | 生成系 | 対話・一問一答 | GPT3.5は無料<br>GPT4は有料 | Bing<br>LINE公式アカウントなど |
+| Google Bard | Google | 未公表 | テキスト<br>画像(英語版のみ) | 生成系 | 対話・一問一答 | 無料 | Google |
+| GitHub Copilot | GitHub（Microsoft） | 不明<br>（GitHubは23年2月時点で１億人以上） | テキスト | コード支援 | 予測変換出力 | 60日間は無償、以降は有料 | OLTAクラウドファンディング<br>FastLabel<br>スカイディスク<br>（IDEでMicrosoft、JetBrains） |
+| Amazon CodeWhisperer | Amazon | 未公表 | テキスト | コード支援 | 予測変換出力 | 個人は無料<br>企業は有料 | 未公開<br>（IDEでMicrosoft、JetBrains） |
+| Elyza Pencil | ELYZA(東大が発端) | 2022年9月時点で30万人 | テキスト | 生成系 | 単語→文章出力 | デモサイトは無料<br>法人は有料 | 未公開 |
+| Jasper AI | Jasper AI, INC. | 23年5月時点で10万人以上 | テキスト | 生成系 | 単語やテンプレ→文章出力 | 有料 | The Arena Group |
+| Midjourney | Midjourney | 23年4月時点で3億5000万人 | テキスト/画像 | 画像生成系 | 対話 | 有料 | 未公開 |
+| Stable Diffusion | Stability AI | 22年10月時点で150万人以上 | テキスト・画像/画像 | 画像生成系 | 対話 | 無料 | LINE、Dream Studio、Mageなど多数 |
+| Amazon Bedrock | Amazon | 未公表 | - | AIプラットフォーム | API経由 | まだ未公開 | Codaなどが先行利用中 |
 
 ## 各AIの特徴
-### テキスト生成系
+### 生成系（対話・一問一答）
 1. ChatGPT
     1. 概要
         * Generative Pre-trained Transformer（GPT）を使用(https://zero2one.jp/ai-word/gpt/)
         * インターネット上のテキストデータセットを学習
         * 対話、テキストの生成に焦点を当てた微調整がされている
+        * Open AIが開発している画像生成AIにDALL・E2が存在する
     1. 強み
         * インターネット上の膨大なテキストをデータセットとしているため、テキストの生成や対話において自然なやり取りが可能
         * テキストデータにはプログラムも含まれているため、特にVer4ではプログラム言語、フレームワーク、ビルドツールなどを指定するだけでも簡単なアプリケーションを作成することが可能
@@ -87,7 +92,82 @@
         * 現在はバージニアリージョンのみ利用可能なので、情報の取得が遅い可能性がある
     1. 公式Webサイト
         * https://aws.amazon.com/jp/codewhisperer/
-## AIプラットフォーム
+### 生成系(文章出力)
+1. Elyza Pencil
+    1. 概要
+        * 東京大学発のベンチャー企業が作成した国内初の日本語文章執筆AI
+        * メール、ニュース記事、職務経歴書から選択して単語を複数入力後、出力押下で文章を生成
+        * 使用しているモデルは独自の日本語大規模言語AI「ELYZA Brain」
+        * 読み方はイライザ
+    1. 強み
+        * 個人の利用であればデモサイトから無料で利用可能
+        * 日本語に特化しているため、生成される日本語が流暢
+        * メールなど定型文になりがちな文章の生成が簡単に数秒で可能
+        * 逆に長文文章を3行にまとめるELYZA DIGESTというサービスもある
+    1. 弱み
+        * 文章生成に特化しているため、プログラミング支援などはできない
+        * 文章の正確さ、単語の使用率などは甘く、生成された文章を添削することが必要
+        * 法人利用は有料
+        * 無料版は100文字程度の短い文章の生成しかできない
+    1. 公式Webサイト
+        * https://www.pencil.elyza.ai/
+        * https://www.digest.elyza.ai/
+1. Jasper AI
+    1. 概要
+        * アメリカのJasper AI, Inc社が開発した文章作成特化AI
+        * 50種類以上のテンプレートが存在するため、様々なスタイルの文章を生成可能
+        * 使用モデルは不明
+    1. 強み
+        * 使用するテンプレート、タイトル、口調や文体、ターゲット、説明文などを入れるだけで文章生成が可能
+        * テンプレートを組み合わせて長文の生成も可能
+        * SEO対策も可能
+        * InputからOutputで異なる言語を選択することができる
+        * APIが存在するため、その他のアプリケーションへの組み込みが可能
+        * テキストから画像を生成するJasper Artもある
+        * 文章盗用チェッカーアドオンで作成s多分生姜オリジナルかチェックできる
+    1. 弱み
+        * プログラミンギ支援などはできない
+        * 日本語が不自然な箇所がある
+        * トライアル期間が5日間のみで基本は有料
+    1. 公式Webサイト
+        * https://www.jasper.ai/
+        * https://www.jasper.ai/art
+### 画像生成系
+1. Midjourney
+    1. 概要
+        * アメリカの同研究所が開発した画像生成系AI
+        * 入力されたテキストから画像を生成する
+        * コミュニケーションアプリのDiscordの1サービスとして利用可能
+        * CLIP誘導拡散モデルベースを使用していると思われる
+        * 23年3月にVer5が公開されて、より高解像度で詳細な画像生成が可能になった
+    1. 強み
+        * 無料でも25枚までなら生成可能
+        * DALL・E2などより文章理解力が高い
+        * 学習データから著作権のある画像データを除いている
+        * ポリコレ対策が行われている
+    1. 弱み
+        * 英語で入力を行う必要がある
+        * Discordへの登録が必要
+        * APIが公式には存在していない
+    1. 公式Webサイト
+        * https://www.midjourney.com/home/
+1. Stable Diffusion
+    1. 概要
+        * ミュンヘン大学のCompVisグループが開発元で、現在はStability AIとなっている
+        * 潜在拡散モデル（英: latent diffusion model、LDM）を使用
+        * 学習データはLAION-5B（インターネット上で利用可能な情報を、巡回ロボットを利用して収集して生成された大規模データセット）から取得した画像とキャプションのペアから学習
+        * オープンソースとして無料公開しており、Stable Diffusionを使用した様々なサービスが開発されている
+    1. 強み
+        * 無料で利用可能
+        * APIが無料公開されているため、独自のアプリケーションに組み込むなどが可能
+        * 生成された画像は著作権なしとして利用できるため、商用利用も可能
+        * オンライン上でも無料サービスなどが多いため、気軽に利用可能
+    1. 弱み
+        * 英語で入力を行う必要がある
+    1. 公式Webサイト
+        * https://ja.stability.ai/stable-diffusion
+        * https://stablediffusionweb.com
+### AIプラットフォーム
 1. Amazon Bedrock
     1. 概要
         * Amazonが開発したAIサービスを作成するためのプラットフォーム
@@ -102,21 +182,14 @@
         * 料金についても不明
     1. 公式Webサイト
         * https://www.aboutamazon.com/news/aws/aws-amazon-bedrock-generative-ai-service
-        * https://reinforz.co.jp/bizmedia/4493/(公式ではない) 
-## その他AI
-下記のWeb記事にたくさんAIが紹介されている
+        * https://reinforz.co.jp/bizmedia/4493/ (公式ではない)
+## 紹介記事
 1. https://qiita.com/elliot_tk/items/fd002ade309d4cac0a9f
 1. https://www.octoparse.jp/blog/top-20-artificial-intelligenceai-tools-for-2023
 1. https://find-a.jp/seotimes/whats-ai-tool-genre/
 
 
 PKSHA Chatbot
-
-Elyza Pencil
-Jasper AI
-
-Midjourney
-DALL・E 2
 
 voitra
 Prediction One
