@@ -11,6 +11,10 @@
 | Midjourney | Midjourney | 23年4月時点で3億5000万人 | テキスト/画像 | 画像生成系 | 対話 | 有料 | 未公開 |
 | Stable Diffusion | Stability AI | 22年10月時点で150万人以上 | テキスト・画像/画像 | 画像生成系 | 対話 | 無料 | LINE、Dream Studio、Mageなど多数 |
 | Amazon Bedrock | Amazon | 未公表 | - | AIプラットフォーム | API経由 | まだ未公開 | Codaなどが先行利用中 |
+| Neural Network Console | ソニー | 23年4月時点で6万人以上（クラウド版） | - | AIプラットフォーム | GUI操作 | クラウド版は有料(トライアルあり)<br>Windowsアプリ版は無料 | AsahiKasei<br>SEKISUI HOUSEなど |
+| voitra | アップセルテクノロジィーズ | 不明 | 音声/テキスト | 生成系 | Webアップロード | 有料 | 不明 |
+| Prediction One | ソニー | 約3万社 | - | 予測分析 | GUI操作 | 有料(トライアルあり) | PGV、東ハト、STSなど |
+| PKSHA Chatbot  | PKSHA | 100社以上 | - | チャットbotエンジン | - | 有料 | アイリスオーヤマ、同志社大学など |
 
 ## 各AIの特徴
 ### 生成系（対話・一問一答）
@@ -176,21 +180,88 @@
     1. 強み
         * 対話型だけではないサービスに応じた複数のモデルを利用することができる
         * モデルを独自のデータでカスタマイズすることが可能
-        * AWSとの連携や神話異性が高いと予想される
+        * AWSとの連携や親和性が高いと予想される
     1. 弱み
         * まだ正式にサービス開始していないため、詳細や事例が少ない
         * 料金についても不明
     1. 公式Webサイト
         * https://www.aboutamazon.com/news/aws/aws-amazon-bedrock-generative-ai-service
         * https://reinforz.co.jp/bizmedia/4493/ (公式ではない)
+1. Neural Network Console
+    1. 概要
+        * ソニーが開発したディープランニングの統合開発環境
+        * プログラミングをすることなく、学習モデルを作成することが可能
+        * 既にいくつかの大企業が導入している事例が存在する
+        * 学習データの準備は利用者が用意する必要がある
+    1. 強み
+        * GUI操作のみで作成することが可能
+        * 作成した学習モデルはAPIとして公開することが可能
+        * Windowsアプリ版は無料で使用することが可能
+        * プログラミングをする必要がないため、AIを体験するための敷居が少し低い
+        * マニュアルや動画での説明が豊富
+    1. 弱み
+        * クラウド版は従量課金制となっている
+        * Macアプリ版は存在しない
+        * マニュアルなどはAI系の専門用語をある程度理解している必要がある
+    1. 公式Webサイト
+        * https://dl.sony.com/ja/
+### その他
+1. voitra
+    1. 概要
+        * AIによる音声認識、テキスト変換サービス
+        * 音声や動画ファイルをアップロード、時間単位で支払いするとテキスト化されたデータになる
+    1. 強み
+        * 会議などの音声データから議事録作成や動画の字幕作成などに有効
+        * 最大5人までの同時発話を自動認識できる
+        * ブラッシュアッププランを使用すると人がテキストを修正する
+        * 125ヶ国語以上に対応
+    1. 弱み
+        * 翻訳機能はない（開発予定）
+        * APIなどは存在しない
+        * ブラッシュアップしない場合は句読点が適切に入らなかったり、数字がひらがなになる、フィラーワードが入る（えー、あのーとか）場合などがある
+    1. 公式Webサイト
+        * https://voitra.jp/
+1. Prediction One
+    1. 概要
+        * ソニーが開発したAIによる予測分析ツールのサービス
+        * GUIで専門家が行なっていた予測分析をすることができる
+        * クラウド版とWindowsアプリ版がある
+    1. 強み
+        * GUI操作のみで作成することが可能
+        * 作成した予測分析モデルをAPIとして公開することが可能
+        * Amazon S3と連携することが可能（S3からcsvをPrediction Oneに連携など）
+        * 大手企業などの導入実績が多数存在する
+    1. 弱み
+        * 利用料が高い（最安プランでも¥217,800/年）
+        * Macアプリ版が存在しない
+        * 自然言語や画像解析分析など他の機能は存在していない
+    1. 公式Webサイト
+        * https://predictionone.sony.biz/
+1. PKSHA Chatbot
+    1. 概要
+        * PKSHAが開発したAI対話型チャットbot用エンジン
+        * 使用することで各社独自のチャットbot作成が可能
+        * SaaS型で利用可能
+    1. 強み
+        * 導入して学習データを用意、作成することで各社独自のチャットbotを作成可能
+        * 問い合わせ対応などの業務負担を軽減できる可能性が高い
+        * GUI上でメンテナンスなどが可能
+        * APIとして公開、SNSなどと連携することが可能
+        * 国内シェアNo.1らしい
+    1. 弱み
+        * 料金などが問い合わせしないと不明
+        * 具体的な使い方などもネット上に情報が少ない
+    1. 公式Webサイト
+        * https://aisaas.pkshatech.com/chatbot/
 ## 紹介記事
 1. https://qiita.com/elliot_tk/items/fd002ade309d4cac0a9f
 1. https://www.octoparse.jp/blog/top-20-artificial-intelligenceai-tools-for-2023
 1. https://find-a.jp/seotimes/whats-ai-tool-genre/
-
-
-PKSHA Chatbot
-
-voitra
-Prediction One
-Neural Network Console
+## その他気になった記事
+1. https://www.solize.com/service-solution/specta/
+1. https://monoist.itmedia.co.jp/mn/articles/2211/28/news005.html
+    * 製造業の設計についてはAIによる作業支援が開発されている傾向にあるらしい
+1. https://www.famitsu.com/news/202303/24297009.html
+    * ゲーム業界ではテキスト生成と画像生成などを利用したAIによるNPCの会話テキストやモーション生成が実験されている
+1. https://www.amifiable.co.jp/services/mlet
+    * 結局設計書は人が作成する必要があるテスト自動化ツール
