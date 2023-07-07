@@ -13,6 +13,8 @@
 | Amazon Bedrock | Amazon | 未公表 | - | AIプラットフォーム | API経由 | まだ未公開 | Codaなどが先行利用中 |
 | Neural Network Console | ソニー | 23年4月時点で6万人以上（クラウド版） | - | AIプラットフォーム | GUI操作 | クラウド版は有料(トライアルあり)<br>Windowsアプリ版は無料 | AsahiKasei<br>SEKISUI HOUSEなど |
 | voitra | アップセルテクノロジィーズ | 不明 | 音声/テキスト | 生成系 | Webアップロード | 有料 | 不明 |
+| Auto-GPT | Toran Bruce Richards | - | テキスト | 自律型AI | API経由 | 無料 | - |
+| AgentGPT  | Reworkd | - | テキスト | 自律型AI | 対話、API経由 | 有料<br>無料だと1日5回まで | - |
 | Prediction One | ソニー | 約3万社 | - | 予測分析 | GUI操作 | 有料(トライアルあり) | PGV、東ハト、STSなど |
 | PKSHA Chatbot  | PKSHA | 100社以上 | - | チャットbotエンジン | - | 有料 | アイリスオーヤマ、同志社大学など |
 
@@ -205,6 +207,41 @@
         * マニュアルなどはAI系の専門用語をある程度理解している必要がある
     1. 公式Webサイト
         * https://dl.sony.com/ja/
+### 自律型
+1. Auto-GPT
+    1. 概要
+        * 名前、役割、目標を設定すると内部でChatGPTを複数回使用して目標までのタスクを洗い出す
+        * 目標が達成させるまでタスクをこなしていき、最終的に結果をファイル保存する
+        * GitHubにソースが公開されている
+        * ChatGPTでできることは全てできる
+    1. 強み
+        * 無料で公開されているため、誰でも利用可能
+        * Web検索などURLを提示してアクセスさせることが可能
+        * Web検索を勝手に行うため、最新の情報で出力される
+        * 長期記憶が可能（過去のやり取りを覚える）
+    1. 弱み
+        * 日本語に対応していないため、入力も出力も英語
+        * 利用するためにChatGPT-4のAPIキーが必須
+        * Webブラウザ上で実行することができない
+    1. 公式Webサイト
+        * https://news.agpt.co/
+        * https://github.com/Significant-Gravitas/Auto-GPT
+        * https://wired.jp/article/chatgpt-prompts-auto-gpt/ （公式ではないが詳しい）
+1. AgentGPT
+    1. 概要
+        * Reworkdが開発した自律型AI
+        * 目標が達成させるまでタスクをこなしていく
+        * GitHubにソースが公開されている
+        * ChatGPTでできることは全てできる
+        * 強みと弱みはAuto-GPTに似ている
+    1. 強み
+        * Web版が存在する
+        * 日本語に対応している
+    1. 弱み
+        * 無料だと1日5回しか使用できない
+        * 長期記憶の概念はない
+    1. 公式Webサイト
+        * https://agentgpt.reworkd.ai/ja
 ### その他
 1. voitra
     1. 概要
